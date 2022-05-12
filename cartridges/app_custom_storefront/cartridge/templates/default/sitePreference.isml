@@ -19,6 +19,16 @@
         body {
             background-color: <isprint value="${dw.system.Site.current.preferences.custom.TrainingBackground}" encoding="htmlcontent"/>;
         }
+        .jokeContainer {
+ 			color:#fff;
+ 		}
+ 		.jokeContainer .emoji {
+ 			font-size: 50px;
+ 			margin-bottom: 2px;
+ 		}
+ 		.jokeContainer .joke {
+ 			font-size:20px;
+ 		}
     </style>
 </head>
 <body>
@@ -29,9 +39,13 @@
         
          <label>Product Hide:</label>
        <span> <isprint value="${dw.system.Site.current.preferences.custom["product-hides"]}" encoding="htmlcontent"/></span>
-      
+       <div class="jokeContainer">
+			<p class="emoji">🤓</p>
+			<p class="joke">${pdict.joke}</p>
+		</div>
         </div>
        <br>
+      
     </div>
 </body>
 </html>
